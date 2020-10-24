@@ -14,25 +14,25 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   //Bodies
-  ground1= new Ground(400,390,200,10)
-  box1=new Box (330,235,30,40);
-  box2=new Box (360,235,30,40);
-  box3=new Box (390,235,30,40);
-  box4=new Box (420,235,30,40);
-  box5=new Box (450,235,30,40);
  
-  box6=new Box (360,195,30,40);
-  box7=new Box (390,195,30,40);
-  box8=new Box (420,195,30,40);
-  box9=new Box (390,155,30,40);
- // slingshot1= new SlingShot(this.Polygon,{x:100,y:200})
-   polygon2=new polygon(100,300,40);
+  box1=new Box (330,369,30,40);
+  box2=new Box (360,369,30,40);
+  box3=new Box (390,369,30,40);
+  box4=new Box (420,369,30,40);
+  box5=new Box (450,369,30,40);
+ 
+  box6=new Box (360,329,30,40);
+  box7=new Box (390,329,30,40);
+  box8=new Box (420,329,30,40);
+  ground1= new Ground(400,390,200,10)
+ 
+ polygon2=new polygon(100,300,40);
  sling1= new SlingShot (polygon2.body,{x:300,y:50})
 
 
-  
+  box9=new Box (390,289,30,40);
 
- 
+  
 
   /*image(img, 0, 0);
   image(img, 50, 0, 40, 20, 50, 50, 50, 50);*/
@@ -66,6 +66,6 @@ function mouseDragged(){
   }
   function keyPressed(){
     if(keyCode === 32){
-   sling1.attach(this.polygon2)
+   sling1.attach(polygon2.body)
     }
   }
