@@ -55,6 +55,7 @@ function draw() {
   box8.display();
   box9.display();
   polygon2.display();
+   sling1.display();
   //slingshot1.display();
   
 }
